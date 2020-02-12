@@ -1,0 +1,276 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --bgColor: #252422;
+  --main: #7C3626;
+  --second: #F5853F;
+  --third: #FFFCF2;
+  --fourth: #373F51;
+}
+
+/* header */
+.masthead {
+  background-image: url('./imgs/Horseshoe/DSCF2588.JPG');
+  background-size: cover;
+  height: 400px;
+}
+
+.card {
+  background-color: #1f1f1f8c;
+}
+
+.card-title,
+.card-body a,
+.card-body a:hover {
+  color: #fff;
+}
+
+.card-body a:hover {
+  color: #7C3626;
+}
+
+/* navbar */
+.logo {
+  height: 50px;
+  margin-left: 30px;
+}
+
+.navbar {
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+  z-index: 10;
+  background-color: var(--bgColor);
+  padding: 10px;
+}
+
+.navbar ul.navbar-nav li a {
+  color: var(--third);
+}
+
+.navbar ul.navbar-nav li a:hover {
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  z-index: 100;
+}
+
+
+
+/* blog posts */
+#blog-posts {
+  margin: 30px auto;
+}
+
+.title h1 {
+  text-transform: uppercase;
+}
+
+.holder {
+  overflow: hidden;
+  position: relative;
+  transition: transform 4s ease-in-out;
+  cursor: pointer;
+}
+
+.holder img {
+  transition: transform 3s ease-in-out;
+}
+
+.holder-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #070606;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 3;
+  background-color: rgba(230, 221, 221, 0.4);
+  cursor: auto;
+}
+
+.holder-p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background-color .3s ease-in-out;
+}
+
+.holder-p:hover {
+  text-decoration: none;
+  color: #070606;
+  background-color: var(--bgColor);
+  border-color: var(--bgColor);
+  color: #fff;
+}
+
+.holder img:hover {
+  transform: scale(1.2);
+}
+
+#blog-posts .card-body {
+  background-color: white;
+  border: none;
+}
+
+
+/* blog-featured-image */
+.featured-img {
+  background-image: url('imgs/antylope/DSCF2756.JPG');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.blog-text {
+  font-weight: 600;
+}
+
+
+/* blog-featured-city  */
+.img-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-box .overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  transition: all 0.5s ease-in-out;
+}
+
+.text-box {
+  position: absolute;
+  color: #fff;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-box:hover .overlay2 {
+  opacity: 1;
+  background: rgba(0, 0, 0, .9);
+}
+
+.img-box:hover .text-box {
+  display: block;
+}
+
+/* timeline */
+.timeline-container {
+  margin-bottom: 60px;
+}
+
+ul.timeline {
+  position: relative;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+ul.timeline:before {
+  position: absolute;
+  content: ' ';
+  background: var(--main);
+  left: 0;
+  width: 1px;
+  height: 100%;
+  z-index: 100;
+  top: 1px;
+}
+
+.timeline>li:before {
+  position: absolute;
+  content: '';
+  background: var(--main);
+  border-radius: 50%;
+  left: 0;
+  transform: translate(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+  overflow: hidden;
+  background-color: #1f1f1f;
+  padding: 30px;
+}
+
+footer ul li,
+footer ul li i,
+footer ul li a {
+  color: var(--third);
+}
+
+footer ul p {
+  color: #7C3626;
+}
+
+footer ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+footer ul li i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+
+footer ul li a:hover {
+  text-decoration: none;
+}
+
+footer ul p {
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
+
+.kontakt li a:hover {
+  color: #fff;
+}
+
+ul.link li:hover {
+  color: #fff;
+}
+
+.underline {
+  height: 1px;
+  width: 100%;
+  background: #7C3626;
+  margin-top: 50px;
+}
+
+/* copyrights */
+.copyrights {
+  margin-top: 25px;
+}
+
+.copyrights p,
+.copyrights a {
+  color: var(--third);
+}
